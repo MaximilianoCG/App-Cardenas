@@ -1,6 +1,6 @@
 import React from 'react';
 import { Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink} from './NavBarElementos';
-import CartWidget from '../CartWidget/CartWidget';
+import CartWidget from './CartWidget/CartWidget';
 
 const Navbar = () => {
     return (
