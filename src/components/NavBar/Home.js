@@ -2,11 +2,13 @@ import React from 'react';
 import { Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink} from './NavBarElementos';
 import CartWidget from '../CartWidget/CartWidget';
 import ItemList from '../itemList/ItemList';
+import MediaCard from '../ListContainer/ListContainer';
 
 const Navbar = () => {
     return (
         <>
             <Nav>
+                <MediaCard/>
                 <ItemList/>
                 <NavLink to="/">
                     <h1>Logo</h1>
