@@ -1,12 +1,13 @@
 import React from 'react';
 import { Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink} from './NavBarElementos';
-import CartWidget from './CartWidget/CartWidget';
+import CartWidget from '../CartWidget/CartWidget';
+import ItemList from '../itemList/ItemList';
 
 const Navbar = () => {
     return (
         <>
-        <CartWidget/>
             <Nav>
+                <ItemList/>
                 <NavLink to="/">
                     <h1>Logo</h1>
                 </NavLink>
@@ -28,6 +29,7 @@ const Navbar = () => {
                 <NavBtn>
                     <NavBtnLink to="/signin">Unirse</NavBtnLink>
                 </NavBtn>
+                <CartWidget/>
             </Nav>
         </>
     )

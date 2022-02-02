@@ -1,15 +1,10 @@
 import React from 'react';
+import ItemCounter from '../components/ItemCount/ItemCount';
 
 const About = () => {
     return (
-        <div 
-        style={{
-            display: 'flex', 
-            justifyContent:'center', 
-            alignitems: 'center', 
-            height: '90vh'}}
-            >
-            <h1>About</h1>
+        <div>
+        <ItemCounter/>
         </div>
     )
 }
