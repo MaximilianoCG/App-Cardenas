@@ -1,4 +1,63 @@
-import "./CountCSS.css";
+import React, {useState} from 'react'
+import { FaCartPlus } from "react-icons/fa";
+
+function ItemCount(stock, initial, onAdd) {
+const [counter, setCounter] = useState(initial);
+
+function sumar() {
+  setCounter(counter + 1);
+}
+function restar() {
+  setCounter(counter - 1);
+}
+
+  return (
+    <div>
+      <p>{counter}</p>
+      <button onClick={sumar}>+</button>
+      <button onClick={restar}>-</button>
+      <FaCartPlus onClick={onAdd}/>Agregar al carrito
+    </div>
+  )
+};
+
+export default ItemCount
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* import "./CountCSS.css";
 import React from "react";
 
 const ItemCounter = () => {
@@ -26,4 +85,4 @@ const ItemCounter = () => {
   );
 };
 
-export default ItemCounter;
+export default ItemCounter; */
